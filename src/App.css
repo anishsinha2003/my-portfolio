@@ -65,3 +65,6 @@
   top: 0;
   display: flex;
 }
+.nav-bar {
+  background-color: '#f2f2f2';
+}

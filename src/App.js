@@ -16,11 +16,6 @@ import proj8 from './images/proj8.png';
 import proj9 from './images/proj9.png';
 import proj10 from './images/proj10.png';
 
-// proj vids
-
-// import globalChatVid from "./project-videos/global-chat.mp4";
-// import filmFluentVid from "./project-videos/film-fluent.mp4";
-
 // @mui
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -28,91 +23,19 @@ import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-// import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
-// import CardActions from '@mui/material/CardActions';
-// import Collapse from '@mui/material/Collapse';
 
 // Mui icons
-// import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import FaceIcon from '@mui/icons-material/Face';
 import SchoolIcon from '@mui/icons-material/School';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
-// import PsychologyIcon from '@mui/icons-material/Psychology';
 import ConstructionIcon from '@mui/icons-material/Construction';
-// import IconButton from '@mui/material/IconButton';
 import LanguageIcon from '@mui/icons-material/Language';
-
-// const ExpandMore = styled((props) => {
-//   const { expand, ...other } = props;
-//   return <IconButton {...other} />;
-// })(({ theme, expand }) => ({
-//   transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
-//   marginLeft: 'auto',
-//   transition: theme.transitions.create('transform', {
-//     duration: theme.transitions.duration.shortest,
-//   }),
-// }));
-
-// const skills = [
-//   {
-//     name : "HTML",
-//     percentage : "82%",
-//     colour: "green"
-//   },
-//   {
-//     name : "Python",
-//     percentage : "86%",
-//     colour: "red"
-//   },
-//   {
-//     name : "ReactJS",
-//     percentage : "88%",
-//     colour: "yellow"
-//   },
-//   {
-//     name : "C",
-//     percentage : "60%",
-//     colour: "orange"
-//   },
-//   {
-//     name : "CSS",
-//     percentage : "72%",
-//     colour: "blue"
-//   },
-//   {
-//     name : "Haskell",
-//     percentage : "73%",
-//     colour: "purple"
-//   },
-//   {
-//     name : "Dafny (verification Language)",
-//     percentage : "48%",
-//     colour: "#ff80d5"
-//   },
-//   {
-//     name : "Database Manipulation (SQL/PostgreSql)",
-//     percentage : "73%",
-//     colour: "#993333"
-//   },
-//   {
-//     name : "JavaScript",
-//     percentage : "83%",
-//     colour: "#ffcc66"
-//   },
-//   {
-//     name : "Git",
-//     percentage : "95%",
-//     colour: "#208000"
-//   },
-
-
-// ]
 
 const projects = [
   {
@@ -185,9 +108,6 @@ const projects = [
 
 function App() {
 
-  const [copiedEmail, setCopiedEmail] = useState(false)
-  // const [cardExpandedBool, setCardExpandedBool] = React.useState(false);
-
   function clickEducation() {
     let e = document.getElementById("education-page");
         e.scrollIntoView({
@@ -206,15 +126,6 @@ function App() {
     });
   }
 
-  // function clickSkills() {
-  //   let e = document.getElementById("skills-page");
-  //       e.scrollIntoView({
-  //       behavior: 'smooth',
-  //       block: 'start',
-  //       inline: 'center'
-  //   });
-  // }
-
   function clickProjects() {
     let e = document.getElementById("projects-page");
         e.scrollIntoView({
@@ -232,145 +143,15 @@ function App() {
     });
   }
 
-  useEffect(() => {
-    if (copiedEmail) {
-      const timeout = setTimeout(() => {
-        setCopiedEmail(false);
-      }, 2000);
-
-      return () => {
-        clearTimeout(timeout);
-      };
-    }
-  }, [copiedEmail]);
-
-  // const video = document.querySelector(".video-container video");
-  // const hoverText = document.querySelector(".video-container .hover-text");
-
-  // video.addEventListener("mouseenter", () => {
-  //   video.play();
-  //   hoverText.classList.remove("active");
-  // });
-
-  // video.addEventListener("mouseleave", () => {
-  //   video.pause();
-  //   video.
-  //   hoverText.classList.add("active");
-  // });
-
   return (
     <div style={{ backgroundColor:"#f2f2f2", height: "100%", background: "radial-gradient(ellipse at bottom right, #e6fff3, #f2f2f2)" }}>
-      <AppBar  sx={{ backgroundColor: '#f2f2f2' }}>
-        <Container maxWidth="100%">
-          <Toolbar disableGutters>
-            <FaceIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, color: '#006635' }} />
-            <Box sx={{ flexGrow: 2, display: { xs: 'none', md: 'flex' }}}>
-              <Button
-                key="About me"
-                onClick={clickAboutMe}
-                sx={{ my: 1, color: "#404040", display: 'block', fontWeight: "bold",
-                  ':hover': {
-                    backgroundColor: '#006635',
-                    color: 'white',
-                  },
-                }}
-              >
-                About Me
-              </Button>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <SchoolIcon sx={{ display: { xs: 'none', md: 'flex' }, color: '#006635', mr: 1, position: 'relative', bottom: '-13px' }} />
-              <Button
-                key="Education"
-                onClick={clickEducation}
-                sx={{ my: 1, color: "#404040", display: 'block', fontWeight: "bold",
-                ':hover': {
-                  backgroundColor: '#006635',
-                  color: 'white',
-                },
-              }}
-              >
-                Education
-              </Button>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <ConstructionIcon sx={{ display: { xs: 'none', md: 'flex' }, color: '#006635', mr: 1, position: 'relative', bottom: '-13px'}} />
-              <Button
-                key="Projects"
-                onClick={clickProjects}
-                sx={{ my: 1, color: "#404040", display: 'block', fontWeight: "bold",
-                ':hover': {
-                  backgroundColor: '#006635',
-                  color: 'white',
-                },
-              }}
-              >
-                Projects
-              </Button>
-              {/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <PsychologyIcon sx={{ display: { xs: 'none', md: 'flex' }, color: '#006635', mr: 1, position: 'relative', bottom: '-13px' }} />
-              <Button
-                key="Skills"
-                onClick={clickSkills}
-                sx={{ my: 1, color: "#404040", display: 'block', fontWeight: "bold",
-                  ':hover': {
-                    backgroundColor: '#006635',
-                    color: 'white',
-                  },
-                }}
-              >
-                Skills
-              </Button> */}
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <LanguageIcon sx={{ display: { xs: 'none', md: 'flex' }, color: '#006635', mr: 1, position: 'relative', bottom: '-13px'}} />
-              <Button
-                key="Projects Links"
-                onClick={clickProjectsLinks}
-                sx={{ my: 1, color: "#404040", display: 'block', fontWeight: "bold",
-                ':hover': {
-                  backgroundColor: '#006635',
-                  color: 'white',
-                },
-              }}
-              >
-                Projects Links
-              </Button>
-
-              <Button href="https://www.instagram.com/anish.sinha1/" target="_blank" sx={{position: "absolute",  top: '12px', right: "0", }}>
-                <InstagramIcon sx={{ display: { xs: 'none', md: 'flex' }, color: '#006635', mr: 1}} />
-              </Button>
-              <Button href="https://www.linkedin.com/in/anish-sinha-9a369b222/" target="_blank" sx={{position: "absolute",  top: '12px', right: "50px" }}>
-                <LinkedInIcon sx={{ display: { xs: 'none', md: 'flex' }, color: '#006635', mr: 1}} />
-              </Button>
-              <Button
-                sx={{ position: "absolute",  top: '12px', right: "100px", visibility: copiedEmail ? "hidden" : "visible" }}
-                onClick={() => { navigator.clipboard.writeText(`anishsinha2003@gmail.com`) && setCopiedEmail(true)}}
-                >
-                <EmailIcon sx={{ display: { xs: 'none', md: 'flex' }, color: '#006635', mr: 1, opacity: copiedEmail ? "0" : "1", transition: "all 1s"}} />
-              </Button>
-              <span style={{ visibility: !copiedEmail ? "hidden" : "visible", fontSize: "17px", fontWeight: "bold", color: "#404040", position: "absolute",  top: '15px', right: "112px", opacity: copiedEmail ? "1" : "0", transition: "all 1s"}}>✅ &nbsp; Email copied! </span>
-            </Box>
-          </Toolbar>
-        </Container>
-      </AppBar>
+      <NavBar clickAboutMe={clickAboutMe} clickEducation={clickEducation} clickProjects={clickProjects} clickProjectsLinks={clickProjectsLinks}/>
       <br/><br/><br/><br/><br/><br/>
       <div>
         <div id="about-me-page" style={{height: "90px", visibility: 'hidden', zIndex: '0'}}></div>
         <Typography component="h2" sx={{ fontWeight: "200", textAlign: "center", fontSize: "42px"}}>
           About Me
         </Typography>
-        {/* <img src={underline} alt="underline" style={{ display: "block", marginLeft: "auto", marginRight: "auto", position: "relative", top: "-130px", opacity:"0.3", width:"300px" }}/>
-        <div style={{textAlign: "left", position: "relative", top: "-180px", paddingLeft: "200px"}}>
-          <img src={dp} alt="dp" style={{height: "500px", borderRadius: "48%", boxShadow:"12px 12px 2px 1px #d9d9d9"}}/>
-        <div style={{ textAlign: "left", width: "600px", position: "relative", top: "-500px", right: "-500px" }}>
-          <Typography component="h2" sx={{ fontWeight: "0", fontSize: "32px"}}>
-            Hi, I'm <span style={{ color: "#00b359", fontWeight: "bold"}}>Anish!</span>
-          </Typography>
-          <br/>
-          <Typography component="h2" sx={{ fontWeight: "200", fontSize: "20px"}}>
-            I am an undergraduate student at UNSW majoring in software engineering and biomedical engineering.  I am currently in my third year of my degree. I have two and a half years of experience in coding and all things technical which I have gained from university course work and side projects. <br/><br/>
-            Although I have a huge passion for software development and developing a product from scratch which satisfies the user’s requirements, nothing gives me more satisfaction and fulfilment than knowing my software, that I or my team had built, is going to help someone in the real world.
-          </Typography>
-          </div>
-        </div> */}
         <img src={underline} alt="underline" style={{ display: "block", marginLeft: "auto", marginRight: "auto", position: "relative", top: "-130px", opacity:"0.3", width:"300px" }}/>
         <div style={{textAlign: "center", display: "flex", justifyContent: "center", position: "relative", top: "-130px"}}>
           <img src={dp} alt="dp" style={{height: "500px", borderRadius: "48%", boxShadow:"12px 12px 2px 1px #d9d9d9"}}/>
@@ -612,29 +393,230 @@ function App() {
           </div>
         </div>
       </div>
-      {/* <div style={{position: "relative", top: "-550px"}}>
-        <hr style={{ border: "none", width: "90%", height: "50px", marginTop: "0", borderBottom: "0.1px solid #333", boxShadow: "0 20px 20px -20px #333", margin: "-50px auto 10px" }}></hr>
-        <br/><br/><br/>
-        <div id="skills-page" style={{height: "90px", visibility: 'hidden', zIndex: '0'}}></div>
-        <Typography component="h2" sx={{ fontWeight: "200", textAlign: "center", fontSize: "42px"}}>
-          Skills
-        </Typography>
-        <img src={underline} alt="underline" style={{ display: "block", marginLeft: "auto", marginRight: "auto", position: "relative", top: "-130px", opacity:"0.3", width:"300px" }}/>
-        <div style={{ padding: "150px", display: 'flex', justifyContent: 'space-evenly', flexWrap: 'wrap', gap: "100px 30px", position: 'relative', top: "-290px" }}>
-          {skills.map((skill, index) => (
-            <div>
-              <Typography component="h2" sx={{ fontWeight: "100", textAlign: "start", fontSize: "28px"}}>
-                {skill.name}
-              </Typography>
-              <br/>
-              <div className="progress-bar">
-                <div style={{height: "10px", borderRadius: "5px", width: skill.percentage, backgroundColor: skill.colour}}><span>{skill.percentage}</span></div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div> */}
     </div>
   );
 }
+
+const NavBar = ({clickAboutMe, clickEducation, clickProjects, clickProjectsLinks}) => {
+  const handleIGclick = () => {
+    window.open('https://www.instagram.com/anish.sinha1/', '_blank');
+  };
+  const handleLinkedINclick = () => {
+    window.open('https://www.linkedin.com/in/anish-sinha-9a369b222/', '_blank');
+  };
+  const [copiedEmail, setCopiedEmail] = useState(false);
+  useEffect(() => {
+    if (copiedEmail) {
+      const timeout = setTimeout(() => {
+        setCopiedEmail(false);
+      }, 2000);
+
+      return () => {
+        clearTimeout(timeout);
+      };
+    }
+  }, [copiedEmail]);
+  return (
+  <AppBar  sx={{ backgroundColor: '#f2f2f2' }}>
+    <Container maxWidth="xl">
+      <Toolbar disableGutters>
+        {/* larger widths */}
+        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }}}>
+          <FaceIcon sx={{ color: '#006635', mr: 1, position: 'relative', bottom: '-13px' }} />
+          <Button
+            key="About me"
+            onClick={clickAboutMe}
+            sx={{ my: 1, color: "#404040", display: 'block', fontWeight: "bold",
+              ':hover': {
+                backgroundColor: '#006635',
+                color: 'white',
+              },
+            }}
+          >
+            About Me
+          </Button>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <SchoolIcon sx={{ color: '#006635', mr: 1, position: 'relative', bottom: '-13px' }} />
+          <Button
+            key="Education"
+            onClick={clickEducation}
+            sx={{ my: 1, color: "#404040", display: 'block', fontWeight: "bold",
+            ':hover': {
+              backgroundColor: '#006635',
+              color: 'white',
+            },
+          }}
+          >
+            Education
+          </Button>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <ConstructionIcon sx={{ color: '#006635', mr: 1, position: 'relative', bottom: '-13px'}} />
+          <Button
+            key="Projects"
+            onClick={clickProjects}
+            sx={{ my: 1, color: "#404040", display: 'block', fontWeight: "bold",
+            ':hover': {
+              backgroundColor: '#006635',
+              color: 'white',
+            },
+          }}
+          >
+            Projects
+          </Button>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <LanguageIcon sx={{ color: '#006635', mr: 1, position: 'relative', bottom: '-13px'}} />
+          <Button
+            key="Projects Links"
+            onClick={clickProjectsLinks}
+            sx={{ my: 1, color: "#404040", display: 'block', fontWeight: "bold",
+            ':hover': {
+              backgroundColor: '#006635',
+              color: 'white',
+            },
+          }}
+          >
+            Projects Links
+          </Button>
+
+          <Button href="https://www.instagram.com/anish.sinha1/" target="_blank" sx={{position: "absolute",  top: '12px', right: "0", }}>
+            <InstagramIcon sx={{ display: { xs: 'none', md: 'flex' }, color: '#006635', mr: 1}} />
+          </Button>
+          <Button href="https://www.linkedin.com/in/anish-sinha-9a369b222/" target="_blank" sx={{position: "absolute",  top: '12px', right: "50px" }}>
+            <LinkedInIcon sx={{ display: { xs: 'none', md: 'flex' }, color: '#006635', mr: 1}} />
+          </Button>
+          <Button
+            sx={{ position: "absolute",  top: '12px', right: "100px", visibility: copiedEmail ? "hidden" : "visible" }}
+            onClick={() => { navigator.clipboard.writeText(`anishsinha2003@gmail.com`) && setCopiedEmail(true)}}
+            >
+            <EmailIcon sx={{ display: { xs: 'none', md: 'flex' }, color: '#006635', mr: 1, opacity: copiedEmail ? "0" : "1", transition: "all 1s"}} />
+          </Button>
+          <span style={{ visibility: !copiedEmail ? "hidden" : "visible", fontSize: "17px", fontWeight: "bold", color: "#404040", position: "absolute",  top: '15px', right: "112px", opacity: copiedEmail ? "1" : "0", transition: "all 1s"}}>✅ &nbsp; Email copied! </span>
+        </Box>
+        {/* smaller widths */}
+        <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }}}>
+          <FaceIcon onClick={clickAboutMe}
+            sx={{
+              color: '#006635',
+              mr: 1,
+              padding: "4px",
+              ':hover': {
+                backgroundColor: '#006635',
+                color: 'white',
+                cursor: "pointer",
+                padding: "4px",
+                transition: "all 0.3s ease",
+
+              },
+            }}
+          />
+          &nbsp;&nbsp;
+          <SchoolIcon onClick={clickEducation}
+            sx={{
+              color: '#006635',
+              mr: 1,
+              padding: "4px",
+              ':hover': {
+                backgroundColor: '#006635',
+                color: 'white',
+                cursor: "pointer",
+                padding: "4px",
+                transition: "all 0.3s ease",
+
+              },
+            }}
+          />
+          &nbsp;&nbsp;
+          <ConstructionIcon onClick={clickProjects}
+          sx={{
+              color: '#006635',
+              mr: 1,
+              padding: "4px",
+              ':hover': {
+                backgroundColor: '#006635',
+                color: 'white',
+                cursor: "pointer",
+                padding: "4px",
+                transition: "all 0.3s ease",
+
+              },
+            }}
+          />
+          &nbsp;&nbsp;
+          <LanguageIcon onClick={clickProjectsLinks}
+            sx={{
+              color: '#006635',
+              mr: 1,
+              padding: "4px",
+              ':hover': {
+                backgroundColor: '#006635',
+                color: 'white',
+                cursor: "pointer",
+                padding: "4px",
+                transition: "all 0.3s ease",
+
+              },
+            }}
+          />
+          <InstagramIcon onClick={handleIGclick}
+            sx={{
+              color: '#006635',
+              mr: 1,
+              padding: "4px",
+              position: "absolute",
+              top: '12px',
+              right: "0",
+              ':hover': {
+                backgroundColor: '#006635',
+                color: 'white',
+                cursor: "pointer",
+                padding: "4px",
+                transition: "all 0.3s ease",
+              }
+            }}
+          />
+
+          <LinkedInIcon onClick={handleLinkedINclick}
+            sx={{
+              color: '#006635',
+              mr: 1,
+              padding: "4px",
+              position: "absolute",
+              top: '12px',
+              right: "50px",
+              ':hover': {
+                backgroundColor: '#006635',
+                color: 'white',
+                cursor: "pointer",
+                padding: "4px",
+                transition: "all 0.3s ease",
+              }
+            }}
+          />
+          <EmailIcon onClick={() => { navigator.clipboard.writeText(`anishsinha2003@gmail.com`) && setCopiedEmail(true)}}
+            sx={{
+              position: "absolute",
+              top: '12px',
+              right: "100px",
+              color: '#006635',
+              mr: 1,
+              opacity: copiedEmail ? "0" : "1",
+              cursor: "pointer",
+              padding: "4px",
+              ':hover': {
+                backgroundColor: '#006635',
+                color: 'white',
+                cursor: "pointer",
+                padding: "2px",
+                transition: "all 0.1s ease",
+              }
+            }}
+          />
+          <span style={{ visibility: copiedEmail ? "visible" : "hidden", fontSize: "17px", fontWeight: "bold", color: "#404040", position: "absolute",  right: "110px", top: '13px', opacity: copiedEmail ? "1" : "0", transition: "all 1s"}}>✅ &nbsp; Email copied! </span>
+        </Box>
+      </Toolbar>
+    </Container>
+  </AppBar>
+  )
+}
+
 export default App;
