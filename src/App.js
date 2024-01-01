@@ -180,18 +180,19 @@ function App() {
         <div style={{position: "relative", top: "-130px"}}>
           <div>
             <Typography component="h2" sx={{ fontWeight: "bold", textAlign: "start", fontSize: "22px", paddingLeft: "50px"}}>
-              Model Farms High School  <Typography component="h2" sx={{ fontWeight: "50", textAlign: "end", fontSize: "22px", position: "absolute", display: "inline", right: "90px"}}>  2015 - 2026 </Typography>
+              Model Farms High School
             </Typography>
             <br/>
             <Typography component="h2" sx={{ fontWeight: "50", textAlign: "start", fontSize: "20px", paddingLeft: "50px"}}>
               Secondary Education
             </Typography>
+            <Typography component="h2" sx={{ fontWeight: "50", textAlign: "end", fontSize: "22px", position: "absolute", display: "inline", right: "90px"}}>  2015 - 2026 </Typography>
           </div>
           <hr style={{ border: "none", width: "95%", height: "80px", borderBottom: "2px solid #a6a6a6" }}></hr>
           <br/><br/><br/>
           <div>
             <Typography component="h2" sx={{ fontWeight: "bold", textAlign: "start", fontSize: "22px", paddingLeft: "50px"}}>
-              Cherrybrook Technology High School  <Typography component="h2" sx={{ fontWeight: "50", textAlign: "end", fontSize: "22px", position: "absolute", display: "inline", right: "90px"}}>  2017 - 2020 </Typography>
+              Cherrybrook Technology High School
             </Typography>
             <br/>
             <Typography component="h2" sx={{ fontWeight: "50", textAlign: "start", fontSize: "20px", paddingLeft: "50px"}}>
@@ -201,12 +202,13 @@ function App() {
             <Typography component="h2" sx={{ fontWeight: "50", textAlign: "start", fontSize: "20px", paddingLeft: "50px"}}>
               Graduated with atar of 96.15. Band 5 or 6 in Physics, Biology, Software Developement, Extension 1 and 2 Maths and Advanced English
             </Typography>
+            <Typography component="h2" sx={{ fontWeight: "50", textAlign: "end", fontSize: "22px", position: "absolute", display: "inline", right: "90px"}}>  2017 - 2020 </Typography>
           </div>
           <hr style={{ border: "none", width: "95%", height: "80px", borderBottom: "2px solid #a6a6a6" }}></hr>
           <br/><br/><br/>
           <div>
             <Typography component="h2" sx={{ fontWeight: "bold", textAlign: "start", fontSize: "22px", paddingLeft: "50px"}}>
-              University of New South Wales <Typography component="h2" sx={{ fontWeight: "50", textAlign: "end", fontSize: "22px", position: "absolute", right: "90px", display: "inline"}}>  2021 - Present </Typography>
+              University of New South Wales
             </Typography>
             <br/>
             <Typography component="h2" sx={{ fontWeight: "50", textAlign: "start", fontSize: "20px", paddingLeft: "50px"}}>
@@ -220,10 +222,10 @@ function App() {
             <Typography component="h2" sx={{ fontWeight: "50", textAlign: "start", fontSize: "20px", paddingLeft: "50px"}}>
               Current WAM (Weighted Average Mark) of Distinction
             </Typography>
+            <Typography component="h2" sx={{ fontWeight: "50", textAlign: "end", fontSize: "22px", position: "absolute", right: "90px", display: "inline"}}>  2021 - Present </Typography>
           </div>
         </div>
       </div>
-      <br/><br/>
       <div>
         <hr style={{ border: "none", width: "95%", height: "50px", marginTop: "0", borderBottom: "0.1px solid #333", boxShadow: "0 20px 20px -20px #333", margin: "-50px auto 10px" }}></hr>
         <br/><br/><br/>
