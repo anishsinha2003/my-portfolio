@@ -57,3 +57,11 @@
   color: green;
   height: 100vh;
 }
+
+.ig-button {
+  color: red;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+}

@@ -334,19 +334,19 @@ function App() {
                 Projects Links
               </Button>
 
-              <Button href="https://www.instagram.com/anish.sinha1/" target="_blank" sx={{ position: 'relative', left: "1100px" }}>
+              <Button href="https://www.instagram.com/anish.sinha1/" target="_blank" sx={{position: "absolute",  top: '12px', right: "0", }}>
                 <InstagramIcon sx={{ display: { xs: 'none', md: 'flex' }, color: '#006635', mr: 1}} />
               </Button>
-              <Button href="https://www.linkedin.com/in/anish-sinha-9a369b222/" target="_blank" sx={{ position: 'relative', left: "980px" }}>
+              <Button href="https://www.linkedin.com/in/anish-sinha-9a369b222/" target="_blank" sx={{position: "absolute",  top: '12px', right: "50px" }}>
                 <LinkedInIcon sx={{ display: { xs: 'none', md: 'flex' }, color: '#006635', mr: 1}} />
               </Button>
               <Button
-                sx={{ position: 'relative', left: "860px", visibility: copiedEmail ? "hidden" : "visible" }}
+                sx={{ position: "absolute",  top: '12px', right: "100px", visibility: copiedEmail ? "hidden" : "visible" }}
                 onClick={() => { navigator.clipboard.writeText(`anishsinha2003@gmail.com`) && setCopiedEmail(true)}}
                 >
                 <EmailIcon sx={{ display: { xs: 'none', md: 'flex' }, color: '#006635', mr: 1, opacity: copiedEmail ? "0" : "1", transition: "all 1s"}} />
               </Button>
-              <span style={{ visibility: !copiedEmail ? "hidden" : "visible", fontSize: "17px", fontWeight: "bold", color: "#404040", position: "relative", right: "-700px", top: "11px", opacity: copiedEmail ? "1" : "0", transition: "all 1s"}}>✅ &nbsp; Email copied! </span>
+              <span style={{ visibility: !copiedEmail ? "hidden" : "visible", fontSize: "17px", fontWeight: "bold", color: "#404040", position: "absolute",  top: '15px', right: "112px", opacity: copiedEmail ? "1" : "0", transition: "all 1s"}}>✅ &nbsp; Email copied! </span>
             </Box>
           </Toolbar>
         </Container>
@@ -357,7 +357,7 @@ function App() {
         <Typography component="h2" sx={{ fontWeight: "200", textAlign: "center", fontSize: "42px"}}>
           About Me
         </Typography>
-        <img src={underline} alt="underline" style={{ display: "block", marginLeft: "auto", marginRight: "auto", position: "relative", top: "-130px", opacity:"0.3", width:"300px" }}/>
+        {/* <img src={underline} alt="underline" style={{ display: "block", marginLeft: "auto", marginRight: "auto", position: "relative", top: "-130px", opacity:"0.3", width:"300px" }}/>
         <div style={{textAlign: "left", position: "relative", top: "-180px", paddingLeft: "200px"}}>
           <img src={dp} alt="dp" style={{height: "500px", borderRadius: "48%", boxShadow:"12px 12px 2px 1px #d9d9d9"}}/>
         <div style={{ textAlign: "left", width: "600px", position: "relative", top: "-500px", right: "-500px" }}>
@@ -370,62 +370,81 @@ function App() {
             Although I have a huge passion for software development and developing a product from scratch which satisfies the user’s requirements, nothing gives me more satisfaction and fulfilment than knowing my software, that I or my team had built, is going to help someone in the real world.
           </Typography>
           </div>
+        </div> */}
+        <img src={underline} alt="underline" style={{ display: "block", marginLeft: "auto", marginRight: "auto", position: "relative", top: "-130px", opacity:"0.3", width:"300px" }}/>
+        <div style={{textAlign: "center", display: "flex", justifyContent: "center", position: "relative", top: "-130px"}}>
+          <img src={dp} alt="dp" style={{height: "500px", borderRadius: "48%", boxShadow:"12px 12px 2px 1px #d9d9d9"}}/>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <div style={{ textAlign: "left", width: "600px" }}>
+            <Typography component="h2" sx={{ fontWeight: "0", fontSize: "32px"}}>
+              Hi, I'm <span style={{ color: "#00b359", fontWeight: "bold"}}>Anish!</span>
+            </Typography>
+            <br/>
+            <Typography component="h2" sx={{ fontWeight: "200", fontSize: "20px"}}>
+              I am an undergraduate student at UNSW majoring in software engineering and biomedical engineering.  I am currently in my third year of my degree. I have two and a half years of experience in coding and all things technical which I have gained from university course work and side projects. <br/><br/>
+              Although I have a huge passion for software development and developing a product from scratch which satisfies the user’s requirements, nothing gives me more satisfaction and fulfilment than knowing my software, that I or my team had built, is going to help someone in the real world.
+            </Typography>
+          </div>
         </div>
       </div>
-      <div style={{position: "relative", top: "-300px"}}>
-        <hr style={{ border: "none", width: "90%", height: "50px", marginTop: "0", borderBottom: "0.1px solid #333", boxShadow: "0 20px 20px -20px #333", margin: "-50px auto 10px" }}></hr>
+      <br/><br/><br/><br/><br/><br/><br/><br/>
+      <div>
+        <hr style={{ border: "none", width: "95%", height: "50px", marginTop: "0", borderBottom: "0.1px solid #333", boxShadow: "0 20px 20px -20px #333", margin: "-50px auto 10px" }}></hr>
         <br/><br/><br/>
         <div id="education-page" style={{height: "90px", visibility: 'hidden', zIndex: '0'}}></div>
         <Typography component="h2" sx={{ fontWeight: "200", textAlign: "center", fontSize: "42px"}}>
           Education
         </Typography>
         <img src={underline} alt="underline" style={{ display: "block", marginLeft: "auto", marginRight: "auto", position: "relative", top: "-130px", opacity:"0.3", width:"300px" }}/>
-        <div style={{position: "relative", top: "-140px"}}>
-          <Typography component="h2" sx={{ fontWeight: "bold", textAlign: "start", fontSize: "22px", paddingLeft: "200px"}}>
-            Model Farms High School  <Typography component="h2" sx={{ fontWeight: "50", textAlign: "end", fontSize: "22px", paddingLeft: "1020px", display: "inline"}}>  2015 - 2026 </Typography>
-          </Typography>
-          <br/>
-          <Typography component="h2" sx={{ fontWeight: "50", textAlign: "start", fontSize: "20px", paddingLeft: "200px"}}>
-            Secondary Education
-          </Typography>
-        </div>
-        <hr style={{ border: "none", width: "80%", height: "80px", borderBottom: "2px solid #a6a6a6", position: "relative", top: "-140px" }}></hr>
-        <br/><br/><br/>
-        <div style={{position: "relative", top: "-140px"}}>
-          <Typography component="h2" sx={{ fontWeight: "bold", textAlign: "start", fontSize: "22px", paddingLeft: "200px"}}>
-            Cherrybrook Technology High School  <Typography component="h2" sx={{ fontWeight: "50", textAlign: "end", fontSize: "22px", paddingLeft: "900px", display: "inline"}}>  2017 - 2020 </Typography>
-          </Typography>
-          <br/>
-          <Typography component="h2" sx={{ fontWeight: "50", textAlign: "start", fontSize: "20px", paddingLeft: "200px"}}>
-            Secondary Education
-          </Typography>
-          <br/>
-          <Typography component="h2" sx={{ fontWeight: "50", textAlign: "start", fontSize: "20px", paddingLeft: "200px"}}>
-            Graduated with atar of 96.15. Band 5 or 6 in Physics, Biology, Software Developement, Extension 1 and 2 Maths and Advanced English
-          </Typography>
-        </div>
-        <hr style={{ border: "none", width: "80%", height: "80px", borderBottom: "2px solid #a6a6a6", position: "relative", top: "-140px" }}></hr>
-        <br/><br/><br/>
-        <div style={{position: "relative", top: "-140px"}}>
-          <Typography component="h2" sx={{ fontWeight: "bold", textAlign: "start", fontSize: "22px", paddingLeft: "200px"}}>
-            University of New South Wales <Typography component="h2" sx={{ fontWeight: "50", textAlign: "end", fontSize: "22px", paddingLeft: "970px", display: "inline"}}>  2021 - Present </Typography>
-          </Typography>
-          <br/>
-          <Typography component="h2" sx={{ fontWeight: "50", textAlign: "start", fontSize: "20px", paddingLeft: "200px"}}>
-            Tertiary Education
-          </Typography>
-          <br/>
-          <Typography component="h2" sx={{ fontWeight: "50", textAlign: "start", fontSize: "20px", paddingLeft: "200px"}}>
-            Master's of Biomedical Engineering/Bachelor's of software engineering
-          </Typography>
-          <br/>
-          <Typography component="h2" sx={{ fontWeight: "50", textAlign: "start", fontSize: "20px", paddingLeft: "200px"}}>
-            Current WAM (Weighted Average Mark) of Distinction
-          </Typography>
+        <div style={{position: "relative", top: "-130px"}}>
+          <div>
+            <Typography component="h2" sx={{ fontWeight: "bold", textAlign: "start", fontSize: "22px", paddingLeft: "50px"}}>
+              Model Farms High School  <Typography component="h2" sx={{ fontWeight: "50", textAlign: "end", fontSize: "22px", position: "absolute", display: "inline", right: "90px"}}>  2015 - 2026 </Typography>
+            </Typography>
+            <br/>
+            <Typography component="h2" sx={{ fontWeight: "50", textAlign: "start", fontSize: "20px", paddingLeft: "50px"}}>
+              Secondary Education
+            </Typography>
+          </div>
+          <hr style={{ border: "none", width: "95%", height: "80px", borderBottom: "2px solid #a6a6a6" }}></hr>
+          <br/><br/><br/>
+          <div>
+            <Typography component="h2" sx={{ fontWeight: "bold", textAlign: "start", fontSize: "22px", paddingLeft: "50px"}}>
+              Cherrybrook Technology High School  <Typography component="h2" sx={{ fontWeight: "50", textAlign: "end", fontSize: "22px", position: "absolute", display: "inline", right: "90px"}}>  2017 - 2020 </Typography>
+            </Typography>
+            <br/>
+            <Typography component="h2" sx={{ fontWeight: "50", textAlign: "start", fontSize: "20px", paddingLeft: "50px"}}>
+              Secondary Education
+            </Typography>
+            <br/>
+            <Typography component="h2" sx={{ fontWeight: "50", textAlign: "start", fontSize: "20px", paddingLeft: "50px"}}>
+              Graduated with atar of 96.15. Band 5 or 6 in Physics, Biology, Software Developement, Extension 1 and 2 Maths and Advanced English
+            </Typography>
+          </div>
+          <hr style={{ border: "none", width: "95%", height: "80px", borderBottom: "2px solid #a6a6a6" }}></hr>
+          <br/><br/><br/>
+          <div>
+            <Typography component="h2" sx={{ fontWeight: "bold", textAlign: "start", fontSize: "22px", paddingLeft: "50px"}}>
+              University of New South Wales <Typography component="h2" sx={{ fontWeight: "50", textAlign: "end", fontSize: "22px", position: "absolute", right: "90px", display: "inline"}}>  2021 - Present </Typography>
+            </Typography>
+            <br/>
+            <Typography component="h2" sx={{ fontWeight: "50", textAlign: "start", fontSize: "20px", paddingLeft: "50px"}}>
+              Tertiary Education
+            </Typography>
+            <br/>
+            <Typography component="h2" sx={{ fontWeight: "50", textAlign: "start", fontSize: "20px", paddingLeft: "50px"}}>
+              Master's of Biomedical Engineering/Bachelor's of software engineering
+            </Typography>
+            <br/>
+            <Typography component="h2" sx={{ fontWeight: "50", textAlign: "start", fontSize: "20px", paddingLeft: "50px"}}>
+              Current WAM (Weighted Average Mark) of Distinction
+            </Typography>
+          </div>
         </div>
       </div>
-      <div style={{position: "relative", top: "-250px"}}>
-        <hr style={{ border: "none", width: "90%", height: "50px", marginTop: "0", borderBottom: "0.1px solid #333", boxShadow: "0 20px 20px -20px #333", margin: "-50px auto 10px" }}></hr>
+      <br/><br/>
+      <div>
+        <hr style={{ border: "none", width: "95%", height: "50px", marginTop: "0", borderBottom: "0.1px solid #333", boxShadow: "0 20px 20px -20px #333", margin: "-50px auto 10px" }}></hr>
         <br/><br/><br/>
         <div id="projects-page" style={{height: "90px", visibility: 'hidden', zIndex: '0'}}></div>
         <Typography component="h2" sx={{ fontWeight: "200", textAlign: "center", fontSize: "42px"}}>
@@ -528,8 +547,8 @@ function App() {
             </>
           ))}
         </div>
-        <div style={{position: "relative", top: "-250px"}}>
-          <hr style={{ border: "none", width: "90%", height: "50px", marginTop: "0", borderBottom: "0.1px solid #333", boxShadow: "0 20px 20px -20px #333", margin: "-50px auto 10px" }}></hr>
+        <div>
+          <hr style={{ border: "none", width: "95%", height: "50px", marginTop: "0", borderBottom: "0.1px solid #333", boxShadow: "0 20px 20px -20px #333", margin: "-50px auto 10px" }}></hr>
           <br/><br/><br/>
           <div id="projects-links-page" style={{height: "90px", visibility: 'hidden', zIndex: '0'}}></div>
           <Typography component="h2" sx={{ fontWeight: "200", textAlign: "center", fontSize: "42px"}}>
@@ -537,66 +556,59 @@ function App() {
           </Typography>
           <img src={underline} alt="underline" style={{ display: "block", marginLeft: "auto", marginRight: "auto", position: "relative", top: "-130px", opacity:"0.3", width:"300px" }}/>
           <div style={{position: "relative", top: "-140px"}}>
-            <div style={{textAlign: "start", fontSize: "22px", paddingLeft: "35%"}}>
-              <Button
-                key="Global Chat Link"
-                target="_blank"
-                href={"https://global-chat-anish.netlify.app/"}
-                sx={{ my: 1, color: "#404040", display: 'block', fontWeight: "bold", width: "fit-content", fontSize: "22px",
-                  ':hover': {
-                    backgroundColor: '#006635',
-                    color: 'white',
-                  },
-                }}
-              >
-                https://global-chat-anish.netlify.app/
-              </Button>
-            </div>
-            <br/><br/>
-            <div style={{textAlign: "start", paddingLeft: "25%"}}>
-              {/* <video width="900" controls>
-                <source src={globalChatVid} type="video/mp4"/>
-              </video> */}
-              <iframe width="900" height="515" allow="fullscreen" title='global chat'
-                src="https://www.youtube.com/embed/fcnhBYGyIbM">
-              </iframe>
+            <div style={{textAlign: "center"}}>
+              <div style={{ textAlign: "center", display: "flex", justifyContent: "center"}}>
+                <Button
+                  key="Global Chat Link"
+                  target="_blank"
+                  href={"https://global-chat-anish.netlify.app/"}
+                  sx={{ my: 1, color: "#404040", display: 'block', fontWeight: "bold", width: "fit-content", fontSize: "22px",
+                    ':hover': {
+                      backgroundColor: '#006635',
+                      color: 'white',
+                    },
+                  }}
+                >
+                  https://global-chat-anish.netlify.app/
+                </Button>
+              </div>
+              <br/><br/>
+              <div style={{textAlign: "center", display: "flex", justifyContent: "center"}}>
+                <iframe width="900" height="515" allow="fullscreen" title='global chat'
+                  src="https://www.youtube.com/embed/fcnhBYGyIbM">
+                </iframe>
+              </div>
               <br/><br/>
               <div style={{fontSize: "15px", fontWeight: "bold"}}>Chatting system which allows users to log in using their github account, gmail account or anonymously.</div>
             </div>
-          </div>
-          <hr style={{ border: "none", width: "80%", height: "80px", borderBottom: "2px solid #a6a6a6", position: "relative", top: "-140px" }}></hr>
-          <br/><br/><br/>
-          <div style={{position: "relative", top: "-140px"}}>
-          <div style={{textAlign: "start", fontSize: "22px", paddingLeft: "35%"}}>
-              <Button
-                key="Film Fluent Link"
-                target="_blank"
-                href={"https://film-fluent-anish.netlify.app/"}
-                sx={{ my: 1, color: "#404040", display: 'block', fontWeight: "bold", width: "fit-content", fontSize: "22px",
-                  ':hover': {
-                    backgroundColor: '#006635',
-                    color: 'white',
-                  },
-                }}
-              >
-                https://film-fluent-anish.netlify.app/
-              </Button>
-            </div>
-            <br/><br/>
-            <div style={{textAlign: "start", paddingLeft: "25%"}}>
-              {/* <video width="900" controls>
-                <source src={filmFluentVid} type="video/mp4"/>
-              </video> */}
-              {/* <iframe width="900" height="515"
-                src="https://www.youtube.com/watch?v=lPJVi797Uy0">
-              </iframe> */}
-              <iframe width="900" height="515" allow="fullscreen" title='film fluent'
-                src="https://www.youtube.com/embed/swnsigKLcfo">
-              </iframe>
+            <hr style={{ border: "none", width: "95%", height: "80px", borderBottom: "2px solid #a6a6a6" }}></hr>
+            <br/><br/><br/>
+            <div>
+              <div style={{textAlign: "center", display: "flex", justifyContent: "center"}}>
+                <Button
+                  key="Film Fluent Link"
+                  target="_blank"
+                  href={"https://film-fluent-anish.netlify.app/"}
+                  sx={{ my: 1, color: "#404040", display: 'block', fontWeight: "bold", width: "fit-content", fontSize: "22px",
+                    ':hover': {
+                      backgroundColor: '#006635',
+                      color: 'white',
+                    },
+                  }}
+                >
+                  https://film-fluent-anish.netlify.app/
+                </Button>
+              </div>
               <br/><br/>
-              <div style={{fontSize: "15px", fontWeight: "bold"}}>Allows users to search up reviews of their searched movie/tv shows using the database from IMDB.</div>
+              <div style={{textAlign: "center", display: "flex", justifyContent: "center"}}>
+                <iframe width="900" height="515" allow="fullscreen" title='film fluent'
+                  src="https://www.youtube.com/embed/swnsigKLcfo">
+                </iframe>
+              </div>
+              <br/><br/>
+              <div style={{fontSize: "15px", fontWeight: "bold", textAlign: "center", display: "flex", justifyContent: "center"}}>Allows users to search up reviews of their searched movie/tv shows using the database from IMDB.</div>
+              <br/><br/>
             </div>
-            <br/><br/>
           </div>
         </div>
       </div>
