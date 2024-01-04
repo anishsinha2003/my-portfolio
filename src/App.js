@@ -15,6 +15,7 @@ import proj7 from './images/proj7.png';
 import proj8 from './images/proj8.png';
 import proj9 from './images/proj9.png';
 import proj10 from './images/proj10.png';
+import proj11 from './images/proj11.png';
 
 // @mui
 import AppBar from '@mui/material/AppBar';
@@ -103,6 +104,12 @@ const projects = [
     description : "A full stack project which allows people to search up movies and Tv shows and read the reviews on it using IMDB databse. See link below.",
     skills : ["Python - Backend", "Web scraper", "Flask", "ReactJS", "Heroku - Deployment"],
     date : "12/23"
+  },
+  {
+    name : "SwiftUI Mobile Application game",
+    description : "A mobile application word game created in SwiftUI and Xcode. The app has not been publised to the app store, however, you can see the local preview below (screen recorded on my phone)",
+    skills : ["SwiftUI", "App Development", "Game Development"],
+    date : "1/24"
   },
 ]
 
@@ -302,11 +309,17 @@ function App() {
                     height="194"
                     image={proj9}
                     alt="Project Image"
-                  /> ) :
+                  /> ) : index === 10 ?
                   (<CardMedia
                     component="img"
                     height="194"
                     image={proj10}
+                    alt="Project Image"
+                  /> ) :
+                  (<CardMedia
+                    component="img"
+                    height="194"
+                    image={proj11}
                     alt="Project Image"
                   /> )
 
@@ -335,7 +348,7 @@ function App() {
           <br/><br/><br/>
           <div id="projects-links-page" style={{height: "90px", visibility: 'hidden', zIndex: '0'}}></div>
           <Typography component="h2" sx={{ fontWeight: "200", textAlign: "center", fontSize: "42px"}}>
-            Projects Links
+            Projects Links / Previews
           </Typography>
           <img src={underline} alt="underline" style={{ display: "block", marginLeft: "auto", marginRight: "auto", position: "relative", top: "-130px", opacity:"0.3", width:"300px" }}/>
           <div style={{position: "relative", top: "-140px"}}>
@@ -390,6 +403,19 @@ function App() {
               </div>
               <br/><br/>
               <div style={{fontSize: "15px", fontWeight: "bold", textAlign: "center", display: "flex", justifyContent: "center"}}>Allows users to search up reviews of their searched movie/tv shows using the database from IMDB.</div>
+              <br/><br/>
+            </div>
+            <hr style={{ border: "none", width: "95%", height: "80px", borderBottom: "2px solid #a6a6a6" }}></hr>
+            <br/><br/><br/>
+            <div>
+              <br/><br/>
+              <div style={{textAlign: "center", display: "flex", justifyContent: "center"}}>
+                <iframe width="900" height="515" allow="fullscreen" title='film fluent'
+                  src="https://www.youtube.com/embed/d1rodmjvH4M">
+                </iframe>
+              </div>
+              <br/><br/>
+              <div style={{fontSize: "15px", fontWeight: "bold", textAlign: "center", display: "flex", justifyContent: "center"}}>Mobile application word game using SwiftUI, where users are challenged to fill in the missing letters from easy, <br/><br/> medium and hard words (not yet published in AppStore) </div>
               <br/><br/>
             </div>
           </div>
@@ -477,7 +503,7 @@ const NavBar = ({clickAboutMe, clickEducation, clickProjects, clickProjectsLinks
             },
           }}
           >
-            Projects Links
+            Projects Links / Previews
           </Button>
 
           <Button href="https://www.instagram.com/anish.sinha1/" target="_blank" sx={{position: "absolute",  top: '12px', right: "0", }}>
