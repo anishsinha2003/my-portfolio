@@ -16,6 +16,7 @@ import proj8 from './images/proj8.png';
 import proj9 from './images/proj9.png';
 import proj10 from './images/proj10.png';
 import proj11 from './images/proj11.png';
+import proj12 from './images/proj12.png';
 
 // @mui
 import AppBar from '@mui/material/AppBar';
@@ -38,83 +39,88 @@ import EmailIcon from '@mui/icons-material/Email';
 import ConstructionIcon from '@mui/icons-material/Construction';
 import LanguageIcon from '@mui/icons-material/Language';
 
-const projects = [
-  {
-    name : "Project Backend",
-    description : "Required groups to create a backend. Gave a comprehensible understanding of technical aspects of software engineering such as backend, frontend, servers etc",
-    skills : ["First exposure to Python", "Learned the basic fundamentals of Backend Developement", "Exposed to software development cycle", "Git and CI/CD"],
-    date : "09/21",
-  },
-  {
-    name : "Kahoot Game Frontend",
-    description : "Developing a frontend for a kahoot-like game with a provided backend using reactJS",
-    skills : ["Web Development", "ReactJS", "FrontEnd Testing (Cypress, User Testing)"],
-    date : "03/23",
-  },
-  {
-    name : "LinkedIn Frontend",
-    description : "Producing a frontend for a linkedIn-like page with a provided backend using vanillaJS",
-    skills : ["Vanilla JS", "HTML/CSS"],
-    date : "03/23",
-  },
-  {
-    name : "Data Scraper in Python",
-    description : "Required groups to develop and design a MVP responsible for scraping covid-19 data from multiple data sources and collates said data in a concise/clean manner for users to view",
-    skills : ["Teamwork", "Data scraper in Python", "Product Pitching", "Leadership", "Communication"],
-    date : "09/22"
-  },
-  {
-    name : "Communication service using TCP/UDP",
-    description : "Developing an application generating data at host devices, and shares data between devices and central server",
-    skills : ["Networks, routing and switching", "Various protocol such as IP, TCP, UDP", "Congestion control, flow control, and reliable transmission"],
-    date : "09/22"
-  },
-  {
-    name : "3D 4 health",
-    description : "Project consisting of manufacturing and evaluating new medical implants with robustness and multi-functionality using cutting-edge metal/polymer 3D printing",
-    skills : ["Materials that are biocompatible with Human Body", "Groupwork", "Presentating and delivering product", "Researching and conducting lab work"],
-    date : "02/23"
-  },
-  {
-    name : "Implement Git in Shell",
-    description : "A project which consisted of me implementing 'PIGS', POSIX Implementation of Git in Shell",
-    skills : ["Shell programming", "A clearer and concrete understanding of Git's core semantics", "File manipulation via Shell"],
-    date : "04/23"
-  },
-  {
-    name : "Shell to Python Transpiler",
-    description : "Converting a given file with shell command into its respective python translation. Transpiler which takes Shell scripts as input and output Python. ",
-    skills : ["Deeper understanding of Python", "Experience in translating between complex formats with Python", "Clarify my understanding of Shell syntax & semantics"],
-    date : "06/23"
-  },
-  {
-    name : "Global Chat",
-    description : "A ReactJS application which allows anyone to chat anyone anywhere anytime. They can log in via github, gmail or anonymously. See link below.",
-    skills : ["Deeper understanding of ReactJS", "Experience working with Firebase", "Deployment using neltify"],
-    date : "12/23"
-  },
-  {
-    name : "To Do List",
-    description : "A to-do list/task manager. Beyond standard functionalities, it incorporates innovative features like visualising productivity levels, a task-specific stopwatch/timer, and a task importance ranking system. ",
-    skills : ["Teamwork", "First exposure to Typescript", "Deployment", "Working with database"],
-    date : "11/23"
-  },
-  {
-    name : "Movie Reviews",
-    description : "A full stack project which allows people to search up movies and Tv shows and read the reviews on it using IMDB databse. See link below.",
-    skills : ["Python - Backend", "Web scraper", "Flask", "ReactJS", "Heroku - Deployment"],
-    date : "12/23"
-  },
-  {
-    name : "SwiftUI Mobile Application game",
-    description : "A mobile application word game created in SwiftUI and Xcode. The app has not been publised to the app store, however, you can see the local preview below (screen recorded on my phone)",
-    skills : ["SwiftUI", "App Development", "Game Development"],
-    date : "1/24"
-  },
-]
-
 function App() {
-
+  let projects = [
+    {
+      name : "Project Backend",
+      description : "Required groups to create a backend. Gave a comprehensible understanding of technical aspects of software engineering such as backend, frontend, servers etc",
+      skills : ["First exposure to Python", "Learned the basic fundamentals of Backend Developement", "Exposed to software development cycle", "Git and CI/CD"],
+      date : "09/21",
+    },
+    {
+      name : "Kahoot Game Frontend",
+      description : "Developing a frontend for a kahoot-like game with a provided backend using reactJS",
+      skills : ["Web Development", "ReactJS", "FrontEnd Testing (Cypress, User Testing)"],
+      date : "03/23",
+    },
+    {
+      name : "LinkedIn Frontend",
+      description : "Producing a frontend for a linkedIn-like page with a provided backend using vanillaJS",
+      skills : ["Vanilla JS", "HTML/CSS"],
+      date : "03/23",
+    },
+    {
+      name : "Data Scraper in Python",
+      description : "Required groups to develop and design a MVP responsible for scraping covid-19 data from multiple data sources and collates said data in a concise/clean manner for users to view",
+      skills : ["Teamwork", "Data scraper in Python", "Product Pitching", "Leadership", "Communication"],
+      date : "09/22"
+    },
+    {
+      name : "Communication service using TCP/UDP",
+      description : "Developing an application generating data at host devices, and shares data between devices and central server",
+      skills : ["Networks, routing and switching", "Various protocol such as IP, TCP, UDP", "Congestion control, flow control, and reliable transmission"],
+      date : "09/22"
+    },
+    {
+      name : "3D 4 health",
+      description : "Project consisting of manufacturing and evaluating new medical implants with robustness and multi-functionality using cutting-edge metal/polymer 3D printing",
+      skills : ["Materials that are biocompatible with Human Body", "Groupwork", "Presentating and delivering product", "Researching and conducting lab work"],
+      date : "02/23"
+    },
+    {
+      name : "Implement Git in Shell",
+      description : "A project which consisted of me implementing 'PIGS', POSIX Implementation of Git in Shell",
+      skills : ["Shell programming", "A clearer and concrete understanding of Git's core semantics", "File manipulation via Shell"],
+      date : "04/23"
+    },
+    {
+      name : "Shell to Python Transpiler",
+      description : "Converting a given file with shell command into its respective python translation. Transpiler which takes Shell scripts as input and output Python. ",
+      skills : ["Deeper understanding of Python", "Experience in translating between complex formats with Python", "Clarify my understanding of Shell syntax & semantics"],
+      date : "06/23"
+    },
+    {
+      name : "Global Chat",
+      description : "A ReactJS application which allows anyone to chat anyone anywhere anytime. They can log in via github, gmail or anonymously. See link below.",
+      skills : ["Deeper understanding of ReactJS", "Experience working with Firebase", "Deployment using neltify"],
+      date : "12/23"
+    },
+    {
+      name : "To Do List",
+      description : "A to-do list/task manager. Beyond standard functionalities, it incorporates innovative features like visualising productivity levels, a task-specific stopwatch/timer, and a task importance ranking system. ",
+      skills : ["Teamwork", "First exposure to Typescript", "Deployment", "Working with database"],
+      date : "11/23"
+    },
+    {
+      name : "Movie Reviews",
+      description : "A full stack project which allows people to search up movies and Tv shows and read the reviews on it using IMDB databse. See link below.",
+      skills : ["Python - Backend", "Web scraper", "Flask", "ReactJS", "Heroku - Deployment"],
+      date : "12/23"
+    },
+    {
+      name : "SwiftUI Mobile Application game",
+      description : "A mobile application word game created in SwiftUI and Xcode. The app has not been publised to the app store, however, you can see the local preview below (screen recorded on my phone)",
+      skills : ["SwiftUI", "App Development", "Game Development"],
+      date : "1/24"
+    },
+    {
+      name : "News ReactJS website",
+      description : "A website created to access news from around the world, using an API to retrieve the relevant data. See link below.",
+      skills : ["Web Development", "Firebase Database", "ReactJS"],
+      date : "1/24"
+    },
+  ]
+  projects = projects.reverse();
   function clickEducation() {
     let e = document.getElementById("education-page");
         e.scrollIntoView({
@@ -253,37 +259,37 @@ function App() {
                   (<CardMedia
                   component="img"
                   height="194"
-                  image={proj0}
+                  image={proj12}
                   alt="Project Image"
                   />) : index === 1 ?
                   (<CardMedia
                     component="img"
                     height="194"
-                    image={proj1}
+                    image={proj11}
                     alt="Project Image"
                   /> ) : index === 2 ?
                   (<CardMedia
                     component="img"
                     height="194"
-                    image={proj2}
+                    image={proj10}
                     alt="Project Image"
                   /> ) : index === 3 ?
                   (<CardMedia
                     component="img"
                     height="194"
-                    image={proj3}
+                    image={proj9}
                     alt="Project Image"
                   /> ) : index === 4 ?
                   (<CardMedia
                     component="img"
                     height="194"
-                    image={proj4}
+                    image={proj8}
                     alt="Project Image"
                   /> ) : index === 5 ?
                   (<CardMedia
                     component="img"
                     height="194"
-                    image={proj5}
+                    image={proj7}
                     alt="Project Image"
                   /> ) : index === 6 ?
                   (<CardMedia
@@ -295,33 +301,40 @@ function App() {
                   (<CardMedia
                     component="img"
                     height="194"
-                    image={proj7}
+                    image={proj5}
                     alt="Project Image"
                   /> ) : index === 8 ?
                   (<CardMedia
                     component="img"
                     height="194"
-                    image={proj8}
+                    image={proj4}
                     alt="Project Image"
                   /> ) : index ===9 ?
                   (<CardMedia
                     component="img"
                     height="194"
-                    image={proj9}
+                    image={proj3}
                     alt="Project Image"
                   /> ) : index === 10 ?
                   (<CardMedia
                     component="img"
                     height="194"
-                    image={proj10}
+                    image={proj2}
+                    alt="Project Image"
+                  /> ) : index === 11 ?
+                  (<CardMedia
+                    component="img"
+                    height="194"
+                    image={proj1}
                     alt="Project Image"
                   /> ) :
                   (<CardMedia
                     component="img"
                     height="194"
-                    image={proj11}
+                    image={proj0}
                     alt="Project Image"
                   /> )
+
 
                 }
                 <CardContent>
@@ -417,6 +430,33 @@ function App() {
               <br/><br/>
               <div style={{fontSize: "15px", fontWeight: "bold", textAlign: "center", display: "flex", justifyContent: "center"}}>Mobile application word game using SwiftUI, where users are challenged to fill in the missing letters from easy, <br/><br/> medium and hard words (not yet published in AppStore) </div>
               <br/><br/>
+            </div>
+            <hr style={{ border: "none", width: "95%", height: "80px", borderBottom: "2px solid #a6a6a6" }}></hr>
+            <br/><br/><br/>
+            <div style={{textAlign: "center"}}>
+              <div style={{ textAlign: "center", display: "flex", justifyContent: "center"}}>
+                <Button
+                  key="Global Chat Link"
+                  target="_blank"
+                  href={"https://newsify-anish.netlify.app/"}
+                  sx={{ my: 1, color: "#404040", display: 'block', fontWeight: "bold", width: "fit-content", fontSize: "22px",
+                    ':hover': {
+                      backgroundColor: '#006635',
+                      color: 'white',
+                    },
+                  }}
+                >
+                  https://newsify-anish.netlify.app/
+                </Button>
+              </div>
+              <br/><br/>
+              <div style={{textAlign: "center", display: "flex", justifyContent: "center"}}>
+                <iframe width="900" height="515" allow="fullscreen" title='global chat'
+                  src="https://www.youtube.com/embed/Pp_XwscD0nw">
+                </iframe>
+              </div>
+              <br/><br/>
+              <div style={{fontSize: "15px", fontWeight: "bold"}}>News outlet website which offers the latest stories and news around the world with the use of an API to get the data.</div>
             </div>
           </div>
         </div>
