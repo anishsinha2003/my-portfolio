@@ -452,7 +452,7 @@ function App() {
               <br/><br/>
               <div style={{textAlign: "center", display: "flex", justifyContent: "center"}}>
                 <iframe width="900" height="515" allow="fullscreen" title='global chat'
-                  src="https://www.youtube.com/embed/Pp_XwscD0nw">
+                  src="https://www.youtube.com/embed/nqZ6-3z0mEE">
                 </iframe>
               </div>
               <br/><br/>
